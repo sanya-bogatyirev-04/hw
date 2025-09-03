@@ -1,5 +1,6 @@
 function phrase( name, age ){
     console.log(`Привет, ${name}, вам ${age} лет`);
+    console.log('привет из гита');
 }
 
 function together( array ){
