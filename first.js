@@ -1,16 +1,39 @@
-function phrase( name, age ){
-    console.log(`Привет, ${name}, вам ${age} лет`);
+function degree(x, y){
+    
+    if (y > 0){
+        return x * degree(x, --y);
+    }
+    
+    else if (y < 0){
+        return 1/degree(x, -y);
+    }
+    else if (y === 0)
+        return 1;
 }
 
-function together( array ){
-    console.log(array.join(''));
+console.log(degree(2, -3));
+console.log(degree(2, 3));
+console.log(degree(2, 0));
+
+
+function getCounter (start = 0){
+    let count = start;
+
+    function counter(){
+        count++
+        return count;
+    }
+
+    counter.reset = function(){
+        count = start;
+        return count;
+    };
+    return counter;
 }
 
-var user = {
-    name: "Sasha", 
-    age: 20
-};
-phrase(user.name, user.age);
+let a = getCounter();
 
-var mass = ['s', 'a', 's', 'h', 'a'];
-together(mass);
+console.log(a());
+console.log(a());
+console.log(a());
+console.log(a.reset());
