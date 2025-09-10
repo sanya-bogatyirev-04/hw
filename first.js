@@ -40,3 +40,4 @@ console.log(a.reset());
 
 
 console.log(1);
+console.log(1);
