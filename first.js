@@ -37,3 +37,5 @@ console.log(a());
 console.log(a());
 console.log(a());
 console.log(a.reset());
+
+console.log("sfjhvb");
