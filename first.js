@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function degree(x, y){
     
     if (y > 0){
@@ -9,6 +10,11 @@ function degree(x, y){
     }
     else if (y === 0)
         return 1;
+=======
+function phrase( name, age ){
+    console.log(`Привет, ${name}, вам ${age} лет`);
+    console.log('привет из гита');
+>>>>>>> 4f902d0fea41a929717f5e62830f5e38aa4695a7
 }
 
 console.log(degree(2, -3));
